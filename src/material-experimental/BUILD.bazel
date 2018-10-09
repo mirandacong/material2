@@ -1,6 +1,6 @@
 package(default_visibility=["//visibility:public"])
 load("@angular//:index.bzl", "ng_module", "ng_package")
-load("//:packages.bzl", "CDK_TARGETS", "ROLLUP_GLOBALS", "VERSION_PLACEHOLDER_REPLACEMENTS")
+load("//third_party/ts/material2:packages.bzl", "CDK_TARGETS", "ROLLUP_GLOBALS", "VERSION_PLACEHOLDER_REPLACEMENTS")
 
 
 ng_module(

@@ -2,7 +2,7 @@ licenses(["notice"])
 package(default_visibility=["//visibility:public"])
 load("@build_bazel_rules_typescript//:defs.bzl", "ts_library")
 load("@angular//:index.bzl", "ng_package")
-load("//:packages.bzl", "CDK_TARGETS", "ROLLUP_GLOBALS", "VERSION_PLACEHOLDER_REPLACEMENTS")
+load("//third_party/ts/material2:packages.bzl", "CDK_TARGETS", "ROLLUP_GLOBALS", "VERSION_PLACEHOLDER_REPLACEMENTS")
 
 # Export the CDK tsconfig so that subpackages can reference it directly.
 exports_files(["tsconfig-build.json"])

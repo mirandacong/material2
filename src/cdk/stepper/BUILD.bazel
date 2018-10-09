@@ -11,6 +11,8 @@ ng_module(
     "//third_party/ts/material2/src/cdk/bidi",
     "//third_party/ts/material2/src/cdk/coercion",
     "//third_party/ts/material2/src/cdk/keycodes",
+    "@angular//packages/common",
+    "@angular//packages/forms",
     "@rxjs",
   ],
   tsconfig = "//third_party/ts/material2/src/cdk:tsconfig-build.json",

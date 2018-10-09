@@ -2,8 +2,8 @@ licenses(["notice"])
 package(default_visibility=["//visibility:public"])
 load("@build_bazel_rules_typescript//:defs.bzl", "ts_library")
 load("@angular//:index.bzl", "ng_package", "ng_module")
-load("//tools:sass_bundle.bzl", "sass_bundle")
-load("//:packages.bzl", "MATERIAL_PACKAGES", "MATERIAL_TARGETS", "ROLLUP_GLOBALS",
+load("//third_party/ts/material2/tools:sass_bundle.bzl", "sass_bundle")
+load("//third_party/ts/material2:packages.bzl", "MATERIAL_PACKAGES", "MATERIAL_TARGETS", "ROLLUP_GLOBALS",
     "VERSION_PLACEHOLDER_REPLACEMENTS")
 
 
