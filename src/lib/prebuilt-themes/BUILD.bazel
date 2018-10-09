@@ -1,3 +1,4 @@
+licenses(["notice"])
 package(default_visibility=["//visibility:public"])
 
 # We use these genrules to put the prebuilt themes into the bazel-generated npm
