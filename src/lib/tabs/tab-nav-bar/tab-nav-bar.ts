@@ -61,7 +61,7 @@ export const _MatTabNavMixinBase = mixinDisableRipple(mixinColor(MatTabNavBase, 
  * Provides anchored navigation with animated ink bar.
  */
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: '[mat-tab-nav-bar]',
   exportAs: 'matTabNavBar, matTabNav',
   inputs: ['color', 'disableRipple'],

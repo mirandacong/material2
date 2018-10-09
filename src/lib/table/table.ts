@@ -23,7 +23,7 @@ import {Directionality} from '@angular/cdk/bidi';
  * Wrapper for the CdkTable with Material design styles.
  */
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'mat-table, table[mat-table]',
   exportAs: 'matTable',
   template: CDK_TABLE_TEMPLATE,

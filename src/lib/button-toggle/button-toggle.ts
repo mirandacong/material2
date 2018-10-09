@@ -318,7 +318,7 @@ export const _MatButtonToggleMixinBase = mixinDisableRipple(MatButtonToggleBase)
 
 /** Single button inside of a toggle group. */
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'mat-button-toggle',
   templateUrl: 'button-toggle.html',
   styleUrls: ['button-toggle.css'],

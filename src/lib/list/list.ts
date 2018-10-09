@@ -31,7 +31,7 @@ export class MatListItemBase {}
 export const _MatListItemMixinBase = mixinDisableRipple(MatListItemBase);
 
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'mat-nav-list',
   exportAs: 'matNavList',
   host: {
@@ -47,7 +47,7 @@ export const _MatListItemMixinBase = mixinDisableRipple(MatListItemBase);
 export class MatNavList extends _MatListMixinBase implements CanDisableRipple {}
 
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'mat-list',
   exportAs: 'matList',
   templateUrl: 'list.html',
@@ -91,7 +91,7 @@ export class MatListSubheaderCssMatStyler {}
 
 /** An item within a Material Design list. */
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'mat-list-item, a[mat-list-item]',
   exportAs: 'matListItem',
   host: {

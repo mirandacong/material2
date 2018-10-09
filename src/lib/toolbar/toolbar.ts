@@ -37,7 +37,7 @@ export const _MatToolbarMixinBase = mixinColor(MatToolbarBase);
 export class MatToolbarRow {}
 
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'mat-toolbar',
   exportAs: 'matToolbar',
   templateUrl: 'toolbar.html',

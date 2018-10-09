@@ -35,7 +35,7 @@ import {
 const MAT_FIT_MODE = 'fit';
 
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'mat-grid-list',
   exportAs: 'matGridList',
   templateUrl: 'grid-list.html',

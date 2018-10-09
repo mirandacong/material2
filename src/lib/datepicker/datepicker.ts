@@ -79,7 +79,7 @@ export const _MatDatepickerContentMixinBase = mixinColor(MatDatepickerContentBas
  * @docs-private
  */
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'mat-datepicker-content',
   templateUrl: 'datepicker-content.html',
   styleUrls: ['datepicker-content.css'],
@@ -124,7 +124,7 @@ export class MatDatepickerContent<D> extends _MatDatepickerContentMixinBase
 // if angular adds support for `exportAs: '$implicit'` on directives.
 /** Component responsible for managing the datepicker popup/dialog. */
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'mat-datepicker',
   template: '',
   exportAs: 'matDatepicker',
