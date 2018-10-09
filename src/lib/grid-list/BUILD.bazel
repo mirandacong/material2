@@ -9,10 +9,10 @@ ng_module(
   module_name = "@angular/material/grid-list",
   assets = [":grid-list.css"] + glob(["**/*.html"]),
   deps = [
-    "//src/lib/core",
-    "//src/cdk/bidi",
+    "//third_party/ts/material2/src/lib/core",
+    "//third_party/ts/material2/src/cdk/bidi",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 # TODO(jelbourn): replace this w/ sass_library when it supports acting like a filegroup
@@ -24,7 +24,7 @@ filegroup(
 sass_binary(
   name = "grid_list_scss",
   src = "grid-list.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

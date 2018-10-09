@@ -8,10 +8,10 @@ ng_module(
   module_name = "@angular/cdk/text-field",
   deps = [
     "@rxjs",
-    "//src/cdk/coercion",
-    "//src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/platform",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 # TODO(jelbourn): replace this w/ sass_library when it supports acting like a filegroup

@@ -9,14 +9,14 @@ ng_module(
   module_name = "@angular/material/list",
   assets = [":list.css"] + glob(["**/*.html"]),
   deps = [
-    "//src/lib/core",
-    "//src/lib/divider",
-    "//src/cdk/a11y",
-    "//src/cdk/coercion",
-    "//src/cdk/collections",
-    "//src/cdk/keycodes",
+    "//third_party/ts/material2/src/lib/core",
+    "//third_party/ts/material2/src/lib/divider",
+    "//third_party/ts/material2/src/cdk/a11y",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/collections",
+    "//third_party/ts/material2/src/cdk/keycodes",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 
@@ -29,7 +29,7 @@ filegroup(
 sass_binary(
   name = "list_scss",
   src = "list.scss",
-  deps = ["//src/lib/core:core_scss_lib", "//src/lib/divider:divider_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib", "//third_party/ts/material2/src/lib/divider:divider_scss_lib"],
 )
 
 sass_library(

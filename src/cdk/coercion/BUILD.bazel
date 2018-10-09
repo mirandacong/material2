@@ -9,7 +9,7 @@ ng_module(
   srcs = glob(["**/*.ts"], exclude=["**/*.spec.ts"]),
   module_name = "@angular/cdk/coercion",
   deps = ["@rxjs"],
-  tsconfig = "//src/cdk:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/cdk:tsconfig-build.json",
 )
 
 ts_library(

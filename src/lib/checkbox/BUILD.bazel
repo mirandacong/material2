@@ -9,12 +9,12 @@ ng_module(
   module_name = "@angular/material/checkbox",
   assets = [":checkbox.css"] + glob(["**/*.html"]),
   deps = [
-    "//src/lib/core",
-    "//src/cdk/a11y",
-    "//src/cdk/coercion",
-    "//src/cdk/observers",
+    "//third_party/ts/material2/src/lib/core",
+    "//third_party/ts/material2/src/cdk/a11y",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/observers",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 # TODO(jelbourn): replace this w/ sass_library when it supports acting like a filegroup
@@ -26,7 +26,7 @@ filegroup(
 sass_binary(
   name = "checkbox_scss",
   src = "checkbox.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

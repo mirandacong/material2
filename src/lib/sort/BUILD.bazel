@@ -9,12 +9,12 @@ ng_module(
   module_name = "@angular/material/sort",
   assets = [":sort-header.css"] + glob(["**/*.html"]),
   deps = [
-    "//src/lib/core",
-    "//src/cdk/coercion",
-    "//src/cdk/table",
+    "//third_party/ts/material2/src/lib/core",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/table",
     "@rxjs",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 # TODO(jelbourn): replace this w/ sass_library when it supports acting like a filegroup
@@ -26,7 +26,7 @@ filegroup(
 sass_binary(
   name = "sort_header_scss",
   src = "sort-header.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

@@ -9,10 +9,10 @@ ng_module(
   module_name = "@angular/material/divider",
   assets = [":divider.css"] + glob(["**/*.html"]),
   deps = [
-    "//src/lib/core",
-    "//src/cdk/coercion",
+    "//third_party/ts/material2/src/lib/core",
+    "//third_party/ts/material2/src/cdk/coercion",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 
@@ -25,13 +25,13 @@ filegroup(
 sass_library(
   name = "divider_scss_lib",
   srcs = ["divider.scss"],
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_binary(
   name = "divider_scss",
   src = "divider.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

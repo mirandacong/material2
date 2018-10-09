@@ -9,9 +9,9 @@ ng_module(
   module_name = "@angular/material/progress-bar",
   assets = [":progress-bar.css"] + glob(["**/*.html"]),
   deps = [
-    "//src/lib/core",
+    "//third_party/ts/material2/src/lib/core",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 
@@ -24,7 +24,7 @@ filegroup(
 sass_binary(
   name = "progress_bar_scss",
   src = "progress-bar.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

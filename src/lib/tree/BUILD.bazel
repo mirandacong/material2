@@ -9,11 +9,11 @@ ng_module(
   module_name = "@angular/material/tree",
   assets = [":tree.css"] + glob(["**/*.html"]),
   deps = [
-    "//src/cdk/tree",
-    "//src/lib/core",
+    "//third_party/ts/material2/src/cdk/tree",
+    "//third_party/ts/material2/src/lib/core",
     "@rxjs",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 # TODO(jelbourn): replace this w/ sass_library when it supports acting like a filegroup
@@ -25,7 +25,7 @@ filegroup(
 sass_binary(
   name = "tree_scss",
   src = "tree.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

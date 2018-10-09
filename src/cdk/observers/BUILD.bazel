@@ -9,9 +9,9 @@ ng_module(
   module_name = "@angular/cdk/observers",
   deps = [
     "@rxjs",
-    "//src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/coercion",
   ],
-  tsconfig = "//src/cdk:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/cdk:tsconfig-build.json",
 )
 
 ts_library(
@@ -22,7 +22,7 @@ ts_library(
     ":observers",
     "@rxjs",
   ],
-  tsconfig = "//src/cdk:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/cdk:tsconfig-build.json",
 )
 
 ts_web_test(

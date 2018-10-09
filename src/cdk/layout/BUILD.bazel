@@ -8,11 +8,11 @@ ng_module(
   srcs = glob(["**/*.ts"], exclude=["**/*.spec.ts"]),
   module_name = "@angular/cdk/layout",
   deps = [
-    "//src/cdk/coercion",
-    "//src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/platform",
     "@rxjs",
   ],
-  tsconfig = "//src/cdk:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/cdk:tsconfig-build.json",
 )
 
 ts_library(
@@ -21,10 +21,10 @@ ts_library(
   srcs = glob(["**/*.spec.ts"]),
   deps = [
     ":layout",
-    "//src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/platform",
     "@rxjs",
   ],
-  tsconfig = "//src/cdk:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/cdk:tsconfig-build.json",
 )
 
 ts_web_test(

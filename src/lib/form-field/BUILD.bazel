@@ -13,15 +13,15 @@ ng_module(
     ":form-field-legacy.css",
     ":form-field-outline.css",
     ":form-field-standard.css",
-    "//src/lib/input:input.css"
+    "//third_party/ts/material2/src/lib/input:input.css"
   ] + glob(["**/*.html"]),
   deps = [
-    "//src/lib/core",
-    "//src/cdk/coercion",
-    "//src/cdk/observers",
-    "//src/cdk/platform",
+    "//third_party/ts/material2/src/lib/core",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/observers",
+    "//third_party/ts/material2/src/cdk/platform",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 # TODO(jelbourn): replace this w/ sass_library when it supports acting like a filegroup
@@ -33,31 +33,31 @@ filegroup(
 sass_binary(
   name = "form_field_scss",
   src = "form-field.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_binary(
   name = "form_field_fill_scss",
   src = "form-field-fill.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_binary(
   name = "form_field_legacy_scss",
   src = "form-field-legacy.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_binary(
   name = "form_field_outline_scss",
   src = "form-field-outline.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_binary(
   name = "form_field_standard_scss",
   src = "form-field-standard.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

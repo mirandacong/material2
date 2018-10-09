@@ -12,15 +12,15 @@ ng_module(
     ":simple-snack-bar.css",
   ] + glob(["**/*.html"]),
   deps = [
-    "//src/lib/button",
-    "//src/lib/core",
-    "//src/cdk/a11y",
-    "//src/cdk/layout",
-    "//src/cdk/overlay",
-    "//src/cdk/portal",
+    "//third_party/ts/material2/src/lib/button",
+    "//third_party/ts/material2/src/lib/core",
+    "//third_party/ts/material2/src/cdk/a11y",
+    "//third_party/ts/material2/src/cdk/layout",
+    "//third_party/ts/material2/src/cdk/overlay",
+    "//third_party/ts/material2/src/cdk/portal",
     "@rxjs",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 # TODO(jelbourn): replace this w/ sass_library when it supports acting like a filegroup
@@ -32,13 +32,13 @@ filegroup(
 sass_binary(
   name = "snack_bar_container_scss",
   src = "snack-bar-container.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_binary(
   name = "simple_snack_bar_scss",
   src = "simple-snack-bar.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

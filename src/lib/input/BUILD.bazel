@@ -12,13 +12,13 @@ ng_module(
   ] + glob(["**/*.html"]),
   deps = [
     "@rxjs",
-    "//src/lib/core",
-    "//src/lib/form-field",
-    "//src/cdk/coercion",
-    "//src/cdk/platform",
-    "//src/cdk/text-field",
+    "//third_party/ts/material2/src/lib/core",
+    "//third_party/ts/material2/src/lib/form-field",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/text-field",
   ],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 # TODO(jelbourn): replace this w/ sass_library when it supports acting like a filegroup
@@ -30,7 +30,7 @@ filegroup(
 sass_binary(
   name = "input_scss",
   src = "input.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

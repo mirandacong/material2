@@ -14,8 +14,8 @@ ng_module(
   name = "material",
   srcs = glob(["*.ts"], exclude=["**/*.spec.ts"]),
   module_name = "@angular/material",
-  deps = ["//src/lib/%s" % p for p in MATERIAL_PACKAGES],
-  tsconfig = "//src/lib:tsconfig-build.json",
+  deps = ["//third_party/ts/material2/src/lib/%s" % p for p in MATERIAL_PACKAGES],
+  tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
 )
 
 sass_bundle(
@@ -23,13 +23,13 @@ sass_bundle(
   # Use the filegroup rules for these sass partials directly because sass_library doesn't
   # act like a filegroup.
   srcs = [
-    "//src/cdk/a11y:a11y_scss_partials",
-    "//src/cdk/overlay:overlay_scss_partials",
-    "//src/cdk/text-field:text_field_scss_partials",
+    "//third_party/ts/material2/src/cdk/a11y:a11y_scss_partials",
+    "//third_party/ts/material2/src/cdk/overlay:overlay_scss_partials",
+    "//third_party/ts/material2/src/cdk/text-field:text_field_scss_partials",
   ] + [
-    "//src/lib/%s:%s_scss_partials" % (p, p.replace('-', '_')) for p in MATERIAL_PACKAGES
+    "//third_party/ts/material2/src/lib/%s:%s_scss_partials" % (p, p.replace('-', '_')) for p in MATERIAL_PACKAGES
   ],
-  entry_point = '//src/lib/core:theming/_all-theme.scss',
+  entry_point = '//third_party/ts/material2/src/lib/core:theming/_all-theme.scss',
   output_name = "_theming.scss",
 )
 
@@ -42,12 +42,12 @@ ng_package(
   globals = ROLLUP_GLOBALS,
   data = [
     ":theming_bundle",
-    "//src/lib/prebuilt-themes:indigo-pink",
-    "//src/lib/prebuilt-themes:deeppurple-amber",
-    "//src/lib/prebuilt-themes:pink-bluegrey",
-    "//src/lib/prebuilt-themes:purple-green",
+    "//third_party/ts/material2/src/lib/prebuilt-themes:indigo-pink",
+    "//third_party/ts/material2/src/lib/prebuilt-themes:deeppurple-amber",
+    "//third_party/ts/material2/src/lib/prebuilt-themes:pink-bluegrey",
+    "//third_party/ts/material2/src/lib/prebuilt-themes:purple-green",
   ],
-  packages = ["//src/lib/schematics:npm_package"],
+  packages = ["//third_party/ts/material2/src/lib/schematics:npm_package"],
   replacements = VERSION_PLACEHOLDER_REPLACEMENTS,
   deps = MATERIAL_TARGETS,
   tags = ["publish"],

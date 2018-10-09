@@ -8,11 +8,11 @@ ng_module(
   srcs = glob(["**/*.ts"], exclude=["**/*.spec.ts"]),
   module_name = "@angular/cdk/accordion",
   deps = [
-    "//src/cdk/coercion",
-    "//src/cdk/collections",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/collections",
     "@rxjs",
   ],
-  tsconfig = "//src/cdk:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/cdk:tsconfig-build.json",
 )
 
 ts_library(
@@ -23,7 +23,7 @@ ts_library(
     ":accordion",
     "@rxjs",
   ],
-  tsconfig = "//src/cdk:tsconfig-build.json",
+  tsconfig = "//third_party/ts/material2/src/cdk:tsconfig-build.json",
 )
 
 ts_web_test(
