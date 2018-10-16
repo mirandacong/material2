@@ -14,7 +14,7 @@ ng_module(
     ":form-field-legacy.css",
     ":form-field-outline.css",
     ":form-field-standard.css",
-    "//third_party/ts/material2/src/lib/input:input.css"
+    ":input.css",
   ] + glob(["**/*.html"]),
   deps = [
     "//third_party/ts/material2/src/lib/core",
@@ -23,6 +23,16 @@ ng_module(
     "//third_party/ts/material2/src/cdk/platform",
   ],
   tsconfig = "//third_party/ts/material2/src/lib:tsconfig-build.json",
+)
+
+# Notice:
+#       This file is copied from `lib/input/input.scss`. Since build material2
+#       component from the the project bazel build, the templateUrl could not
+#       use relative path.
+sass_binary(
+  name = "input_scss",
+  src = "input.scss",
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 # TODO(jelbourn): replace this w/ sass_library when it supports acting like a filegroup

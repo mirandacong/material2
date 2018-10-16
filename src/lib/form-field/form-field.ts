@@ -105,7 +105,7 @@ export const MAT_FORM_FIELD_DEFAULT_OPTIONS =
     'form-field-legacy.css',
     'form-field-outline.css',
     'form-field-standard.css',
-    '../input/input.css',
+    'input.css',
   ],
   animations: [matFormFieldAnimations.transitionMessages],
   host: {
