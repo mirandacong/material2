@@ -62,7 +62,6 @@ export interface ArrowViewStateTransition {
  * column definition.
  */
 @Component({
-  // moduleId: module.id,
   selector: '[mat-sort-header]',
   exportAs: 'matSortHeader',
   templateUrl: 'sort-header.html',

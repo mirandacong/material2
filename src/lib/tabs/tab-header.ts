@@ -61,7 +61,6 @@ export const _MatTabHeaderMixinBase = mixinDisableRipple(MatTabHeaderBase);
  * @docs-private
  */
 @Component({
-  // moduleId: module.id,
   selector: 'mat-tab-header',
   templateUrl: 'tab-header.html',
   styleUrls: ['tab-header.css'],

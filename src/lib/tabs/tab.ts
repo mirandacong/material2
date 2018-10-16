@@ -33,7 +33,6 @@ export class MatTabBase {}
 export const _MatTabMixinBase = mixinDisabled(MatTabBase);
 
 @Component({
-  // moduleId: module.id,
   selector: 'mat-tab',
   templateUrl: 'tab.html',
   inputs: ['disabled'],

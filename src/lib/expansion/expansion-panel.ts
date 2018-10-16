@@ -47,7 +47,6 @@ let uniqueId = 0;
  * multiple children of an element with the MatAccordion directive attached.
  */
 @Component({
-  // moduleId: module.id,
   styleUrls: ['./expansion-panel.css'],
   selector: 'mat-expansion-panel',
   exportAs: 'matExpansionPanel',

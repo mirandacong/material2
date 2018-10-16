@@ -31,7 +31,6 @@ import {MatExpansionPanel} from './expansion-panel';
  * This component corresponds to the header element of an `<mat-expansion-panel>`.
  */
 @Component({
-  // moduleId: module.id,
   selector: 'mat-expansion-panel-header',
   styleUrls: ['./expansion-panel-header.css'],
   templateUrl: './expansion-panel-header.html',

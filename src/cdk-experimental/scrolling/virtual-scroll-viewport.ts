@@ -36,7 +36,6 @@ function rangesEqual(r1: ListRange, r2: ListRange): boolean {
 
 /** A viewport that virtualizes it's scrolling with the help of `CdkVirtualForOf`. */
 @Component({
-  moduleId: module.id,
   selector: 'cdk-virtual-scroll-viewport',
   templateUrl: 'virtual-scroll-viewport.html',
   styleUrls: ['virtual-scroll-viewport.css'],
