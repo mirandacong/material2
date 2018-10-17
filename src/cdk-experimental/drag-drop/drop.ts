@@ -30,7 +30,6 @@ let _uniqueIdCounter = 0;
 
 /** Container that wraps a set of draggable items. */
 @Component({
-  moduleId: module.id,
   selector: 'cdk-drop',
   exportAs: 'cdkDrop',
   template: '<ng-content></ng-content>',

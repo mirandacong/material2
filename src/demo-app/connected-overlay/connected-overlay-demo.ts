@@ -19,7 +19,6 @@ import {Component, TemplateRef, ViewChild, ViewContainerRef} from '@angular/core
 
 
 @Component({
-  moduleId: module.id,
   selector: 'overlay-demo',
   templateUrl: 'connected-overlay-demo.html',
   styleUrls: ['connected-overlay-demo.css'],

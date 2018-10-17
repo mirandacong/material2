@@ -93,7 +93,6 @@ export const MAT_FORM_FIELD_DEFAULT_OPTIONS =
 
 /** Container for form controls that applies Material Design styling and behavior. */
 @Component({
-  // moduleId: module.id,
   selector: 'mat-form-field',
   exportAs: 'matFormField',
   templateUrl: 'form-field.html',
@@ -106,7 +105,7 @@ export const MAT_FORM_FIELD_DEFAULT_OPTIONS =
     'form-field-legacy.css',
     'form-field-outline.css',
     'form-field-standard.css',
-    '../input/input.css',
+    'input.css',
   ],
   animations: [matFormFieldAnimations.transitionMessages],
   host: {

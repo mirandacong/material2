@@ -10,7 +10,6 @@ import {Component} from '@angular/core';
 
 
 @Component({
-  moduleId: module.id,
   selector: 'progress-spinner-demo',
   templateUrl: 'progress-spinner-demo.html',
   styleUrls: ['progress-spinner-demo.css'],

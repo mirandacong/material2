@@ -36,7 +36,6 @@ let progressbarId = 0;
  * `<mat-progress-bar>` component.
  */
 @Component({
-  // moduleId: module.id,
   selector: 'mat-progress-bar',
   exportAs: 'matProgressBar',
   host: {

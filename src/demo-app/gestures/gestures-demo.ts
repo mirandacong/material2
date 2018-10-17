@@ -10,7 +10,6 @@ import {Component} from '@angular/core';
 
 
 @Component({
-  moduleId: module.id,
   selector: 'gestures-demo',
   templateUrl: 'gestures-demo.html',
   styleUrls: ['gestures-demo.css'],

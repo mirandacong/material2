@@ -17,7 +17,6 @@ import {FileDatabase, FileFlatNode, FileNode} from './file-database';
 
 
 @Component({
-  moduleId: module.id,
   selector: 'tree-demo',
   templateUrl: 'tree-demo.html',
   styleUrls: ['tree-demo.css'],

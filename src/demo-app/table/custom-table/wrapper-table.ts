@@ -21,7 +21,6 @@ import {SimpleColumn} from './simple-column';
 
 
 @Component({
-  moduleId: module.id,
   selector: 'wrapper-table',
   templateUrl: 'wrapper-table.html',
   styles: [`

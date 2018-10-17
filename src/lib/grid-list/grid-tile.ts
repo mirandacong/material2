@@ -21,7 +21,6 @@ import {MatLine, MatLineSetter} from '@angular/material/core';
 import {coerceToNumber} from './grid-list-measure';
 
 @Component({
-  // moduleId: module.id,
   selector: 'mat-grid-tile',
   exportAs: 'matGridTile',
   host: {
@@ -58,7 +57,6 @@ export class MatGridTile {
 }
 
 @Component({
-  // moduleId: module.id,
   selector: 'mat-grid-tile-header, mat-grid-tile-footer',
   templateUrl: 'grid-tile-text.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

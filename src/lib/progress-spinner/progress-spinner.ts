@@ -101,7 +101,6 @@ const INDETERMINATE_ANIMATION_TEMPLATE = `
  * `<mat-progress-spinner>` component.
  */
 @Component({
-  // moduleId: module.id,
   selector: 'mat-progress-spinner',
   exportAs: 'matProgressSpinner',
   host: {
@@ -272,7 +271,6 @@ export class MatProgressSpinner extends _MatProgressSpinnerMixinBase implements 
  * indeterminate `<mat-progress-spinner>` instance.
  */
 @Component({
-  // moduleId: module.id,
   selector: 'mat-spinner',
   host: {
     'role': 'progressbar',

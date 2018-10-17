@@ -2,7 +2,6 @@ import {Component, ElementRef, Output, EventEmitter} from '@angular/core';
 import {MatDialog, MatDialogRef} from '@angular/material';
 
 @Component({
-  moduleId: module.id,
   selector: 'fullscreen-e2e',
   templateUrl: 'fullscreen-e2e.html'
 })

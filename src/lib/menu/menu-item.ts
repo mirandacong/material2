@@ -36,7 +36,6 @@ export const _MatMenuItemMixinBase = mixinDisableRipple(mixinDisabled(MatMenuIte
  * It exists mostly to set the role attribute.
  */
 @Component({
-  // moduleId: module.id,
   selector: '[mat-menu-item]',
   exportAs: 'matMenuItem',
   inputs: ['disabled', 'disableRipple'],

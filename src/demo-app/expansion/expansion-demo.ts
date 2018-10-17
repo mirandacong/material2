@@ -11,7 +11,6 @@ import {MatAccordion} from '@angular/material';
 
 
 @Component({
-  moduleId: module.id,
   selector: 'expansion-demo',
   styleUrls: ['expansion-demo.css'],
   templateUrl: 'expansion-demo.html',

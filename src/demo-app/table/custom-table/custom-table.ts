@@ -12,7 +12,6 @@ import {Element, ELEMENT_DATA} from '../element-data';
 
 
 @Component({
-  moduleId: module.id,
   selector: 'custom-table-demo',
   templateUrl: 'custom-table.html',
   styleUrls: ['custom-table.css']
