@@ -3,7 +3,10 @@ workspace(name = "angular_material")
 # Add nodejs rules
 http_archive(
   name = "build_bazel_rules_nodejs",
-  url = "https://github.com/bazelbuild/rules_nodejs/archive/0.8.0.zip",
+  urls = [
+    "http://mirrors.corp.logiocean.com/file-store/rules_nodejs/0.8.0.zip",
+    "https://github.com/bazelbuild/rules_nodejs/archive/0.8.0.zip",
+  ],
   strip_prefix = "rules_nodejs-0.8.0",
   sha256 = "4e40dd49ae7668d245c3107645f2a138660fcfd975b9310b91eda13f0c973953",
 )
@@ -18,7 +21,10 @@ node_repositories(package_json = ["//:package.json"])
 # Add sass rules
 http_archive(
   name = "io_bazel_rules_sass",
-  url = "https://github.com/bazelbuild/rules_sass/archive/0.1.0.zip",
+  urls = [
+    "http://mirrors.corp.logiocean.com/file-store/rules_sass/0.1.0.zip",
+    "https://github.com/bazelbuild/rules_sass/archive/0.1.0.zip",
+  ],
   strip_prefix = "rules_sass-0.1.0",
   sha256 = "b243c4d64f054c174051785862ab079050d90b37a1cef7da93821c6981cb9ad4",
 )
@@ -29,7 +35,10 @@ sass_repositories()
 # Add TypeScript rules
 http_archive(
   name = "build_bazel_rules_typescript",
-  url = "https://github.com/bazelbuild/rules_typescript/archive/0.12.3.zip",
+  urls = [
+    "http://mirrors.corp.logiocean.com/file-store/rules_typescript/0.12.3.zip",
+    "https://github.com/bazelbuild/rules_typescript/archive/0.12.3.zip",
+  ],
   strip_prefix = "rules_typescript-0.12.3",
   sha256 = "967068c3540f59407716fbeb49949c1600dbf387faeeab3089085784dd21f60c",
 )
