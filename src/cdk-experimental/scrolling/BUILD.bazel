@@ -1,6 +1,6 @@
 package(default_visibility=["//visibility:public"])
 
-load("//tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
 
 ng_module(
   name = "scrolling",
@@ -9,9 +9,9 @@ ng_module(
   deps = [
     "@angular//packages/core",
     "@rxjs",
-    "//src/cdk/coercion",
-    "//src/cdk/collections",
-    "//src/cdk/scrolling",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/collections",
+    "//third_party/ts/material2/src/cdk/scrolling",
   ],
 )
 
@@ -19,7 +19,7 @@ ng_test_library(
   name = "scrolling_test_sources",
   srcs = glob(["**/*.spec.ts"]),
   deps = [
-    "//src/cdk/scrolling",
+    "//third_party/ts/material2/src/cdk/scrolling",
     ":scrolling",
   ],
 )

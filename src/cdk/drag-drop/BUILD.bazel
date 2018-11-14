@@ -1,6 +1,6 @@
 package(default_visibility=["//visibility:public"])
 
-load("//tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
 
 ng_module(
   name = "drag-drop",
@@ -11,10 +11,10 @@ ng_module(
     "@angular//packages/core",
     "@rxjs",
     "@rxjs//operators",
-    "//src/cdk/platform",
-    "//src/cdk/scrolling",
-    "//src/cdk/bidi",
-    "//src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/scrolling",
+    "//third_party/ts/material2/src/cdk/bidi",
+    "//third_party/ts/material2/src/cdk/coercion",
   ],
 )
 
@@ -22,8 +22,8 @@ ng_test_library(
   name = "drag-drop_test_sources",
   srcs = glob(["**/*.spec.ts"]),
   deps = [
-    "//src/cdk/testing",
-    "//src/cdk/bidi",
+    "//third_party/ts/material2/src/cdk/testing",
+    "//third_party/ts/material2/src/cdk/bidi",
     ":drag-drop",
   ]
 )

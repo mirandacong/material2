@@ -1,7 +1,8 @@
 package(default_visibility=["//visibility:public"])
+licenses(['notice'])
 
-load("@io_bazel_rules_sass//:defs.bzl", "sass_library", "sass_binary")
-load("//tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
+#load("@io_bazel_rules_sass//:defs.bzl", "sass_library", "sass_binary")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
 
 ng_module(
   name = "button",
@@ -12,9 +13,9 @@ ng_module(
     "@angular//packages/common",
     "@angular//packages/core",
     "@angular//packages/platform-browser/animations",
-    "//src/cdk/platform",
-    "//src/cdk/a11y",
-    "//src/lib/core",
+    "//third_party/ts/material2/src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/a11y",
+    "//third_party/ts/material2/src/lib/core",
   ],
 )
 
@@ -28,7 +29,7 @@ filegroup(
 sass_library(
   name = "button_scss_lib",
   srcs = [":button_scss_partials"],
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_binary(
@@ -47,7 +48,7 @@ ng_test_library(
   srcs = glob(["**/*.spec.ts"]),
   deps = [
     "@angular//packages/platform-browser",
-    "//src/lib/core",
+    "//third_party/ts/material2/src/lib/core",
     ":button"
   ]
 )

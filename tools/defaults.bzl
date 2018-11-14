@@ -5,8 +5,8 @@ load("@build_bazel_rules_nodejs//:defs.bzl", _jasmine_node_test = "jasmine_node_
 load("@build_bazel_rules_typescript//:defs.bzl", _ts_library = "ts_library",
   _ts_web_test_suite = "ts_web_test_suite")
 
-_DEFAULT_TSCONFIG_BUILD = "//src:bazel-tsconfig-build.json"
-_DEFAULT_TSCONFIG_TEST = "//src:bazel-tsconfig-test.json"
+_DEFAULT_TSCONFIG_BUILD = "//third_party/ts/material2/src:bazel-tsconfig-build.json"
+_DEFAULT_TSCONFIG_TEST = "//third_party/ts/material2/src:bazel-tsconfig-test.json"
 _DEFAULT_TS_TYPINGS = "@matdeps//typescript:typescript__typings"
 
 def _getDefaultTsConfig(testonly):
@@ -37,7 +37,7 @@ def ng_module(deps = [], tsconfig = None, testonly = False, **kwargs):
 
     # Depend on the module typings for each `ng_module`. Since all components within the project
     # need to use `module.id` when creating components, this is always a dependency.
-    "//src:module-typings"
+    "//third_party/ts/material2/src:module-typings"
   ] + deps
 
   _ng_module(
@@ -80,7 +80,7 @@ def ng_web_test_suite(deps = [], srcs = [], static_css = [], bootstrap = [], **k
   # that is needed for measuring, will unexpectedly fail. Also always adding a prebuilt theme
   # reduces the amount of setup that is needed to create a test suite Bazel target. Note that the
   # prebuilt theme will be also added to CDK test suites but shouldn't affect anything.
-  static_css = static_css + ["//src/lib/prebuilt-themes:indigo-pink"]
+  static_css = static_css + ["//third_party/ts/material2/src/lib/prebuilt-themes:indigo-pink"]
 
   # Workaround for https://github.com/bazelbuild/rules_typescript/issues/301
   # Since some of our tests depend on CSS files which are not part of the `ng_module` rule,

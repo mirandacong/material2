@@ -8,7 +8,7 @@ This API is exported for users building Angular Material from source in
 downstream projects.
 """
 
-load("//tools:angular_material_setup_workspace.bzl",
+load("//third_party/ts/material2/tools:angular_material_setup_workspace.bzl",
     _angular_material_setup_workspace = "angular_material_setup_workspace")
 
 angular_material_setup_workspace = _angular_material_setup_workspace

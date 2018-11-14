@@ -1,5 +1,5 @@
 package(default_visibility=["//visibility:public"])
-load("//tools:defaults.bzl", "ts_library")
+load("//third_party/ts/material2/tools:defaults.bzl", "ts_library")
 load("@build_bazel_rules_nodejs//:defs.bzl", "nodejs_binary")
 
 

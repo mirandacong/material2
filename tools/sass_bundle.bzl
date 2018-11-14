@@ -56,7 +56,7 @@ sass_bundle = rule(
 
     # The executable (bundler) for this rule (private).
     "_sass_bundle": attr.label(
-      default = Label("//tools:sass_bundle"),
+      default = Label("//third_party/ts/material2/tools:sass_bundle"),
       executable = True,
       cfg = "host"
   )},

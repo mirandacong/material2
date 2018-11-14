@@ -7,4 +7,4 @@
 cd $(dirname ${0})/../..
 
 # Build and run the stage release script.
-bazel run //tools/release:stage-release -- $PWD
+bazel run //third_party/ts/material2/tools/release:stage-release -- $PWD

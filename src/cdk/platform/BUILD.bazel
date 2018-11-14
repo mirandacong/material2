@@ -1,6 +1,6 @@
 package(default_visibility=["//visibility:public"])
 
-load("//tools:defaults.bzl", "ng_module")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module")
 
 ng_module(
   name = "platform",

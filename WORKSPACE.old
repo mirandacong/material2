@@ -79,8 +79,8 @@ node_repositories(
 # are no longer building it from source.
 yarn_install(
   name = "npm",
-  package_json = "//tools:npm/package.json",
-  yarn_lock = "//tools:npm/yarn.lock",
+  package_json = "//third_party/ts/material2/tools:npm/package.json",
+  yarn_lock = "//third_party/ts/material2/tools:npm/yarn.lock",
 )
 
 # Setup TypeScript Bazel workspace

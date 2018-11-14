@@ -6,28 +6,28 @@ package(default_visibility=["//visibility:public"])
 
 genrule(
   name = "indigo-pink",
-  srcs = ["//src/lib/core:theming/prebuilt/indigo-pink.css"],
+  srcs = ["//third_party/ts/material2/src/lib/core:theming/prebuilt/indigo-pink.css"],
   outs = ["indigo-pink.css"],
   cmd = "cp $< $@",
 )
 
 genrule(
   name = "deeppurple-amber",
-  srcs = ["//src/lib/core:theming/prebuilt/deeppurple-amber.css"],
+  srcs = ["//third_party/ts/material2/src/lib/core:theming/prebuilt/deeppurple-amber.css"],
   outs = ["deeppurple-amber.css"],
   cmd = "cp $< $@",
 )
 
 genrule(
   name = "pink-bluegrey",
-  srcs = ["//src/lib/core:theming/prebuilt/pink-bluegrey.css"],
+  srcs = ["//third_party/ts/material2/src/lib/core:theming/prebuilt/pink-bluegrey.css"],
   outs = ["pink-bluegrey.css"],
   cmd = "cp $< $@",
 )
 
 genrule(
   name = "purple-green",
-  srcs = ["//src/lib/core:theming/prebuilt/purple-green.css"],
+  srcs = ["//third_party/ts/material2/src/lib/core:theming/prebuilt/purple-green.css"],
   outs = ["purple-green.css"],
   cmd = "cp $< $@",
 )

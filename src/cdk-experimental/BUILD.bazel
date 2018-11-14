@@ -1,7 +1,7 @@
 package(default_visibility=["//visibility:public"])
 
 load("@angular//:index.bzl", "ng_package")
-load("//tools:defaults.bzl", "ng_module")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module")
 load("//:packages.bzl", "CDK_EXPERIMENTAL_PACKAGES", "CDK_EXPERIMENTAL_TARGETS",
   "CDK_TARGETS", "ROLLUP_GLOBALS", "VERSION_PLACEHOLDER_REPLACEMENTS")
 
@@ -9,7 +9,7 @@ ng_module(
   name = "cdk-experimental",
   srcs = glob(["*.ts"], exclude=["**/*.spec.ts"]),
   module_name = "@angular/cdk-experimental",
-  deps = ["//src/cdk-experimental/%s" % p for p in CDK_EXPERIMENTAL_PACKAGES],
+  deps = ["//third_party/ts/material2/src/cdk-experimental/%s" % p for p in CDK_EXPERIMENTAL_PACKAGES],
 )
 
 ng_package(

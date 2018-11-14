@@ -2,7 +2,7 @@ package(default_visibility=["//visibility:public"])
 
 load("@angular//:index.bzl", "ng_package")
 load("//:packages.bzl", "CDK_TARGETS", "ROLLUP_GLOBALS", "VERSION_PLACEHOLDER_REPLACEMENTS")
-load("//tools:defaults.bzl", "ng_module")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module")
 
 # Export the CDK tsconfig so that subpackages can reference it directly.
 exports_files(["tsconfig-build.json"])

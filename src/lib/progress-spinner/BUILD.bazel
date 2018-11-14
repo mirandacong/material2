@@ -1,7 +1,7 @@
 package(default_visibility=["//visibility:public"])
 
 load("@io_bazel_rules_sass//:defs.bzl", "sass_library", "sass_binary")
-load("//tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
 
 ng_module(
   name = "progress-spinner",
@@ -12,9 +12,9 @@ ng_module(
     "@angular//packages/common",
     "@angular//packages/core",
     "@angular//packages/platform-browser/animations",
-    "//src/cdk/coercion",
-    "//src/cdk/platform",
-    "//src/lib/core",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/platform",
+    "//third_party/ts/material2/src/lib/core",
   ],
 )
 
@@ -27,7 +27,7 @@ filegroup(
 sass_binary(
   name = "progress_spinner_scss",
   src = "progress-spinner.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(

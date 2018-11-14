@@ -1,6 +1,6 @@
 package(default_visibility=["//visibility:public"])
 
-load("//tools:defaults.bzl", "ng_module", "ts_library", "ng_test_library", "ng_web_test_suite")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module", "ts_library", "ng_test_library", "ng_web_test_suite")
 
 ng_module(
   name = "accordion",
@@ -9,8 +9,8 @@ ng_module(
   deps = [
     "@angular//packages/core",
     "@rxjs",
-    "//src/cdk/coercion",
-    "//src/cdk/collections",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/collections",
   ]
 )
 

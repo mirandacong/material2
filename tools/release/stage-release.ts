@@ -171,7 +171,7 @@ async function main() {
 
   if (!projectDir) {
     console.error(red(`You specified no project directory. Cannot run stage release script.`));
-    console.error(red(`Usage: bazel run //tools/release:stage-release <project-directory>`));
+    console.error(red(`Usage: bazel run //third_party/ts/material2/tools/release:stage-release <project-directory>`));
     process.exit(1);
   }
 

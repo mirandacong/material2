@@ -1,7 +1,7 @@
 package(default_visibility=["//visibility:public"])
 
 load("@io_bazel_rules_sass//:defs.bzl", "sass_library", "sass_binary")
-load("//tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
 
 ng_module(
   name = "progress-bar",
@@ -14,7 +14,7 @@ ng_module(
     "@angular//packages/platform-browser/animations",
     "@rxjs",
     "@rxjs//operators",
-    "//src/lib/core",
+    "//third_party/ts/material2/src/lib/core",
   ],
 )
 
@@ -27,7 +27,7 @@ filegroup(
 sass_binary(
   name = "progress_bar_scss",
   src = "progress-bar.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(
@@ -41,7 +41,7 @@ ng_test_library(
   deps = [
     "@angular//packages/platform-browser",
     "@angular//packages/platform-browser/animations",
-    "//src/cdk/testing",
+    "//third_party/ts/material2/src/cdk/testing",
     ":progress-bar",
   ]
 )

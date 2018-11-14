@@ -1,7 +1,7 @@
 package(default_visibility=["//visibility:public"])
 
 load("@angular//:index.bzl", "ng_package")
-load("//tools:defaults.bzl", "ng_module")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module")
 load("//:packages.bzl", "ROLLUP_GLOBALS", "VERSION_PLACEHOLDER_REPLACEMENTS")
 
 ng_module(
@@ -11,7 +11,7 @@ ng_module(
   deps = [
     "@angular//packages/core",
     "@matdeps//moment",
-    "//src/lib/core"
+    "//third_party/ts/material2/src/lib/core"
   ],
   # Explicitly specify the tsconfig that is also used by Gulp. We need to explicitly use this
   # tsconfig because in order to import Moment with TypeScript, we need some special options

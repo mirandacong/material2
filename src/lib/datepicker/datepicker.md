@@ -89,7 +89,7 @@ for more information.
 
 Depending on the `DateAdapter` being used, the datepicker may automatically deserialize certain date
 formats for you as well. For example, both the `NativeDateAdapter` and `MomentDateAdapter` allow
-[ISO 8601](https://tools.ietf.org/html/rfc3339) strings to be passed to the datepicker and
+[ISO 8601](https://third_party/ts/material2/tools.ietf.org/html/rfc3339) strings to be passed to the datepicker and
 automatically converted to the proper object type. This can be convenient when binding data directly
 from your backend to the datepicker. However, the datepicker will not accept date strings formatted
 in user format such as `"1/2/2017"` as this is ambiguous and will mean different things depending on

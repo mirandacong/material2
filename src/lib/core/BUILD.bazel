@@ -1,8 +1,9 @@
 package(default_visibility=["//visibility:public"])
+licenses(['notice'])
 
 load("@io_bazel_rules_sass//:defs.bzl", "sass_library", "sass_binary")
-load("//:packages.bzl", "MATERIAL_PACKAGES")
-load("//tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
+load("//third_party/ts/material2:packages.bzl", "MATERIAL_PACKAGES")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
 
 exports_files(["theming/_theming.scss"])
 
@@ -22,11 +23,11 @@ ng_module(
     "@angular//packages/platform-browser",
     "@angular//packages/platform-browser/animations",
     "@rxjs",
-    "//src/cdk/a11y",
-    "//src/cdk/bidi",
-    "//src/cdk/coercion",
-    "//src/cdk/keycodes",
-    "//src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/a11y",
+    "//third_party/ts/material2/src/cdk/bidi",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/keycodes",
+    "//third_party/ts/material2/src/cdk/platform",
   ],
 )
 
@@ -43,9 +44,9 @@ sass_library(
   name = "core_scss_lib",
   srcs = [":core_scss_partials"],
   deps = [
-    "//src/cdk/a11y:a11y_scss_lib",
-    "//src/cdk/overlay:overlay_scss_lib",
-    "//src/cdk/text-field:text_field_scss_lib",
+    "//third_party/ts/material2/src/cdk/a11y:a11y_scss_lib",
+    "//third_party/ts/material2/src/cdk/overlay:overlay_scss_lib",
+    "//third_party/ts/material2/src/cdk/text-field:text_field_scss_lib",
   ],
 )
 
@@ -73,7 +74,7 @@ sass_library(
     "theming/_all-theme.scss",
     "typography/_all-typography.scss",
   ],
-  deps = [":core_scss_lib"] + ["//src/lib/%s:theme" % p for p in MATERIAL_PACKAGES],
+  deps = [":core_scss_lib"] + ["//third_party/ts/material2/src/lib/%s:theme" % p for p in MATERIAL_PACKAGES],
 )
 
 sass_binary(
@@ -116,9 +117,9 @@ ng_test_library(
   deps = [
     "@angular//packages/platform-browser",
     "@angular//packages/platform-browser/animations",
-    "//src/cdk/platform",
-    "//src/cdk/testing",
-    "//src/lib/core",
+    "//third_party/ts/material2/src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/testing",
+    "//third_party/ts/material2/src/lib/core",
   ]
 )
 

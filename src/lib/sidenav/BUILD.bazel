@@ -1,7 +1,7 @@
 package(default_visibility=["//visibility:public"])
 
 load("@io_bazel_rules_sass//:defs.bzl", "sass_library", "sass_binary")
-load("//tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
+load("//third_party/ts/material2/tools:defaults.bzl", "ng_module", "ng_test_library", "ng_web_test_suite")
 
 ng_module(
   name = "sidenav",
@@ -15,13 +15,13 @@ ng_module(
     "@angular//packages/platform-browser/animations",
     "@rxjs",
     "@rxjs//operators",
-    "//src/cdk/a11y",
-    "//src/cdk/bidi",
-    "//src/cdk/coercion",
-    "//src/cdk/keycodes",
-    "//src/cdk/platform",
-    "//src/cdk/scrolling",
-    "//src/lib/core",
+    "//third_party/ts/material2/src/cdk/a11y",
+    "//third_party/ts/material2/src/cdk/bidi",
+    "//third_party/ts/material2/src/cdk/coercion",
+    "//third_party/ts/material2/src/cdk/keycodes",
+    "//third_party/ts/material2/src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/scrolling",
+    "//third_party/ts/material2/src/lib/core",
   ],
 )
 
@@ -34,7 +34,7 @@ filegroup(
 sass_binary(
   name = "drawer_scss",
   src = "drawer.scss",
-  deps = ["//src/lib/core:core_scss_lib"],
+  deps = ["//third_party/ts/material2/src/lib/core:core_scss_lib"],
 )
 
 sass_library(
@@ -48,12 +48,12 @@ ng_test_library(
   deps = [
     "@angular//packages/platform-browser",
     "@angular//packages/platform-browser/animations",
-    "//src/cdk/a11y",
-    "//src/cdk/bidi",
-    "//src/cdk/keycodes",
-    "//src/cdk/platform",
-    "//src/cdk/scrolling",
-    "//src/cdk/testing",
+    "//third_party/ts/material2/src/cdk/a11y",
+    "//third_party/ts/material2/src/cdk/bidi",
+    "//third_party/ts/material2/src/cdk/keycodes",
+    "//third_party/ts/material2/src/cdk/platform",
+    "//third_party/ts/material2/src/cdk/scrolling",
+    "//third_party/ts/material2/src/cdk/testing",
     ":sidenav",
   ]
 )

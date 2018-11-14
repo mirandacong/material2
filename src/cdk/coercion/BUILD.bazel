@@ -1,6 +1,6 @@
 package(default_visibility=["//visibility:public"])
 
-load("//tools:defaults.bzl", "ts_library", "jasmine_node_test")
+load("//third_party/ts/material2/tools:defaults.bzl", "ts_library", "jasmine_node_test")
 
 ts_library(
   name = "coercion",

@@ -40,7 +40,7 @@ const DEFAULT_DAY_OF_WEEK_NAMES = {
 
 /**
  * Matches strings that have the form of a valid RFC 3339 string
- * (https://tools.ietf.org/html/rfc3339). Note that the string may not actually be a valid date
+ * (https://third_party/ts/material2/tools.ietf.org/html/rfc3339). Note that the string may not actually be a valid date
  * because the regex will match strings an with out of bounds month, date, etc.
  */
 const ISO_8601_REGEX =

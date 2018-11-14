@@ -20,15 +20,15 @@ CDK_PACKAGES = [
   "tree",
 ]
 
-CDK_TARGETS = ["//src/cdk"] + ["//src/cdk/%s" % p for p in CDK_PACKAGES]
+CDK_TARGETS = ["//third_party/ts/material2/src/cdk"] + ["//third_party/ts/material2/src/cdk/%s" % p for p in CDK_PACKAGES]
 
 CDK_EXPERIMENTAL_PACKAGES = [
   "dialog",
   "scrolling",
 ]
 
-CDK_EXPERIMENTAL_TARGETS = ["//src/cdk-experimental"] + [
-  "//src/cdk-experimental/%s" % p for p in CDK_EXPERIMENTAL_PACKAGES
+CDK_EXPERIMENTAL_TARGETS = ["//third_party/ts/material2/src/cdk-experimental"] + [
+  "//third_party/ts/material2/src/cdk-experimental/%s" % p for p in CDK_EXPERIMENTAL_PACKAGES
 ]
 
 MATERIAL_PACKAGES = [
@@ -69,7 +69,7 @@ MATERIAL_PACKAGES = [
   "tree",
 ]
 
-MATERIAL_TARGETS = ["//src/lib:material"] + ["//src/lib/%s" % p for p in MATERIAL_PACKAGES]
+MATERIAL_TARGETS = ["//third_party/ts/material2/src/lib:material"] + ["//third_party/ts/material2/src/lib/%s" % p for p in MATERIAL_PACKAGES]
 
 # Each individual package uses a placeholder for the version of Angular to ensure they're
 # all in-sync. This map is passed to each ng_package rule to stamp out the appropriate
