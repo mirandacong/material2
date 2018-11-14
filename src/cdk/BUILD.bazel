@@ -1,4 +1,5 @@
 package(default_visibility=["//visibility:public"])
+licenses(['notice'])
 
 load("@angular//:index.bzl", "ng_package")
 load("//:packages.bzl", "CDK_TARGETS", "ROLLUP_GLOBALS", "VERSION_PLACEHOLDER_REPLACEMENTS")
