@@ -1,4 +1,5 @@
 package(default_visibility=["//visibility:public"])
+licenses(["notice"])
 
 # We use these genrules to put the prebuilt themes into the bazel-generated npm
 # package in the right spot. The *right* thing to do would be to move them, but

@@ -1,4 +1,5 @@
 package(default_visibility=["//visibility:public"])
+licenses(["notice"])
 
 load("@angular//:index.bzl", "ng_package")
 load("//third_party/ts/material2/tools:sass_bundle.bzl", "sass_bundle")
