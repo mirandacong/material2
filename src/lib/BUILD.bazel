@@ -3,7 +3,7 @@ licenses(["notice"])
 
 load("@angular//:index.bzl", "ng_package")
 load("//third_party/ts/material2/tools:sass_bundle.bzl", "sass_bundle")
-load("//:packages.bzl", "MATERIAL_PACKAGES", "MATERIAL_TARGETS", "ROLLUP_GLOBALS",
+load("//third_party/ts/material2:packages.bzl", "MATERIAL_PACKAGES", "MATERIAL_TARGETS", "ROLLUP_GLOBALS",
     "VERSION_PLACEHOLDER_REPLACEMENTS")
 load("//third_party/ts/material2/tools:defaults.bzl", "ng_module")
 
