@@ -9,8 +9,9 @@ ng_module(
   srcs = glob(["**/*.ts"], exclude=["**/*.spec.ts"]),
   module_name = "@angular/cdk/observers",
   deps = [
-    "@rxjs",
     "//third_party/ts/material2/src/cdk/coercion",
+    "@angular//packages/core",
+    "@rxjs",
   ],
   tsconfig = "//third_party/ts/material2/src/cdk:tsconfig-build.json",
 )
